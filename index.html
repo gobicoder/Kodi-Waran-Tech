@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Business Premium</title>
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="glass">
+  <div class="logo">Business</div>
+  <div class="menu" id="menuBtn">☰</div>
+  <ul id="navList">
+    <li><a href="#">Home</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#founder">Founder</a></li>
+    <li><a href="#pricing">Pricing</a></li>
+    <li><a href="#reviews">Reviews</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-glass glass">
+    <h1>Premium Digital Solutions</h1>
+    <p>
+       We specialize in building modern websites, portfolios, and college projects that combine clean user interfaces with professional quality. Our work is designed to be visually appealing, easy to navigate, and tailored to meet the needs of students, professionals, and businesses alike.
+    </p>
+    <button class="btn book-btn" id="openBooking">Book Your Project</button>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="section">
+  <h2>Our Services</h2>
+  <div class="cards">
+    <div class="card glass">
+      <i class="fas fa-code"></i>
+      <h3>Web Development</h3>
+      <p>Modern responsive websites for business and personal use.</p>
+    </div>
+    <div class="card glass">
+      <i class="fas fa-graduation-cap"></i>
+      <h3>College Projects</h3>
+      <p>Final year academic projects with source code.</p>
+    </div>
+    <div class="card glass">
+      <i class="fas fa-user"></i>
+      <h3>Portfolio Design</h3>
+      <p>Premium portfolios for developers and students.</p>
+    </div>
+  </div>
+</section>
+
+<!-- FOUNDER -->
+<section id="founder" class="section dark">
+  <h2>Founder</h2>
+  <div class="founder glass">
+    <a href="https://www.linkedin.com/in/gobinathdev" target="_blank">
+      <img src="https://i.pravatar.cc/300" alt="Gobinath Profile">
+    </a>
+    <div>
+      <h3>
+        <a href="https://www.linkedin.com/in/gobinathdev" target="_blank">Gobinath</a>
+      </h3>
+      <p class="role">Founder & Developer</p>
+      <p>
+        We help students and businesses build a powerful digital presence by creating modern websites, professional portfolios, and impactful projects. With clean design and quality execution, we ensure your online identity stands out and makes a lasting impression.
+      </p>
+      <p>
+        <strong>LinkedIn:</strong> 
+        <a href="https://www.linkedin.com/in/gobinathdev" target="_blank">View Profile</a> | 
+        <strong>Portfolio:</strong> 
+        <a href="https://gobinath.dev" target="_blank">Visit Website</a>
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section id="pricing" class="section">
+  <h2>Pricing Plans</h2>
+  <p class="section-desc">🎉 Limited Time Offer — Get 50% OFF Today!</p>
+
+  <div class="cards">
+    <div class="card glass">
+      <span class="offer-badge">50% OFF</span>
+      <h3>Starter</h3>
+      <p class="old-price">₹9,999</p>
+      <h4 class="new-price">₹4,999</h4>
+      <p>Perfect for landing pages and student projects.</p>
+      <button class="btn price-book" data-plan="Starter">Book Now</button>
+    </div>
+    <div class="card glass featured">
+      <span class="offer-badge red">50% OFF</span>
+      <h3>Professional</h3>
+      <p class="old-price">₹19,999</p>
+      <h4 class="new-price">₹9,999</h4>
+      <p>Multi-page website with premium UI & SEO basics.</p>
+      <button class="btn price-book" data-plan="Professional">Book Now</button>
+    </div>
+    <div class="card glass">
+      <span class="offer-badge">50% OFF</span>
+      <h3>Premium</h3>
+      <p class="old-price">₹29,999</p>
+      <h4 class="new-price">₹14,999</h4>
+      <p>Custom UI, advanced features, full deployment.</p>
+      <button class="btn price-book" data-plan="Premium">Book Now</button>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section id="reviews" class="section dark">
+  <h2>Client Reviews</h2>
+  <p class="section-desc">What our clients say about our work</p>
+
+  <div id="liveRating" class="live-rating">
+    <span class="stars-animated">
+      <span class="stars-bg">★★★★★</span>
+      <span class="stars-fill" style="width:0%">★★★★★</span>
+    </span>
+    &nbsp; <strong id="avgRating">0.0</strong> (<span id="ratingCount">0</span> Reviews)
+  </div>
+
+  <div class="review-grid" id="reviewContainer"></div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section dark">
+  <h2>Contact Us</h2>
+
+  <div class="contact-box glass">
+    <p><i class="fas fa-user"></i> <strong>Name:</strong> Gobinath</p>
+    <p><i class="fas fa-map-marker-alt"></i> <strong>Location:</strong> Tamil Nadu, India</p>
+    <p>
+      <i class="fab fa-linkedin"></i> 
+      <strong>LinkedIn:</strong> 
+      <a href="https://www.linkedin.com/in/gobinathdev" target="_blank">View Profile</a>
+    </p>
+    <p>
+      <i class="fas fa-globe"></i> 
+      <strong>Portfolio:</strong> 
+      <a href="https://gobinath.dev" target="_blank">Visit Website</a>
+    </p>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Business Premium. All rights reserved.</p>
+</footer>
+
+<!-- BOOKING MODAL -->
+<div class="booking-modal" id="bookingModal">
+  <div class="booking-box glass">
+    <span class="close" id="closeBooking">&times;</span>
+    <h2>Book a Project</h2>
+    <form id="bookingForm">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="tel" name="phone" placeholder="WhatsApp Number" required>
+      <select name="service">
+        <option>Starter</option>
+        <option>Professional</option>
+        <option>Premium</option>
+      </select>
+      <textarea name="message" placeholder="Tell us about your project"></textarea>
+      <button type="submit" class="btn">Send Booking</button>
+    </form>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
